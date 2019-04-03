@@ -1,0 +1,224 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+Demo App
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='starter-template.css')}}">
+{% endblock %}
+
+{% block content %}
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Project name</a>
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="{{ url_for('login') }}">Login</a></li>
+						<li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+
+	 <html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+	height: 100%;
+	line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+	background-position: center;
+	background-size: cover;
+	background-image: url("https://i.imgur.com/jeIafG7.png");
+	min-height: 100%;
+}
+
+.w3-bar .w3-button {
+	padding: 16px;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 400px;
+}
+
+.container .btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: #555;
+	color: white;
+	font-size: 16px;
+	padding: 12px 24px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.container .btn:hover {
+	background-color: black;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+	<div class="w3-bar w3-white w3-card" id="myNavbar">
+		<a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+		<!-- Right-sided navbar links -->
+		<div class="w3-right w3-hide-small">
+			<a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+			<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+			<a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+			<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
+			<a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+		</div>
+		<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+		<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+</div>
+
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+	<div class= "container3" style="padding-left: 600px; padding-top: 150px">
+		<a href="login"> <button class="btn" href="login.html">Login</button></a>
+		 <br><br><br>
+		 <a href="signup"><button class="btn">Signup</button></a>
+	</div>
+
+ <!--    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+		<i class="fa fa-instagram w3-hover-opacity"></i>
+		<i class="fa fa-snapchat w3-hover-opacity"></i>
+		<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+		<i class="fa fa-twitter w3-hover-opacity"></i>
+		<i class="fa fa-linkedin w3-hover-opacity"></i> -->
+ 
+</header>
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+
+	<h3 class="w3-center">THE TEAM</h3>
+ <center>
+	<div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+		<div class="w3-col l3 m6 w3-margin-bottom">
+			<div class="w3-card">
+				<div class="w3-container">
+					<h3>Samiksha</h3>
+					<!-- <p class="w3-opacity">CEO & Founder</p> -->
+					<p>Currently working on TechnoUtsav.</p>
+					<p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-col l3 m6 w3-margin-bottom">
+			<div class="w3-card">
+			 <!--  <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+				<div class="w3-container">
+					<h3>Divyanshi</h3>
+				 <!--  <p class="w3-opacity">Art Director</p> -->
+					<p>Currently working on TechnoUtsav.</p>
+					<p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+				</div>
+			</div>
+		</div>
+		<div class="w3-col l3 m6 w3-margin-bottom">
+			<div class="w3-card">
+				<!-- <img src="/w3images/team3.jpg" alt="Mike" style="width:100%"> -->
+				<div class="w3-container">
+					<h3>Tarkjot Kaur</h3>
+				 <!--  <p class="w3-opacity">Web Designer</p> -->
+					<p>Currently working on TechnoUtsav.</p>
+					<p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+				</div>
+			</div>
+		</div>
+	 
+	</div>
+</center>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+	<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+	<div class="w3-xlarge w3-section">
+<!--     <i class="fa fa-facebook-official w3-hover-opacity"></i>
+		<i class="fa fa-instagram w3-hover-opacity"></i>
+		<i class="fa fa-snapchat w3-hover-opacity"></i>
+		<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+		<i class="fa fa-twitter w3-hover-opacity"></i>
+		<i class="fa fa-linkedin w3-hover-opacity"></i> -->
+	</div>
+	<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">TechnoUtsav 2019</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+	document.getElementById("img01").src = element.src;
+	document.getElementById("modal01").style.display = "block";
+	var captionText = document.getElementById("caption");
+	captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+	if (mySidebar.style.display === 'block') {
+		mySidebar.style.display = 'none';
+	} else {
+		mySidebar.style.display = 'block';
+	}
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+		mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+			<!-- <div class="starter-template">
+				<h1>Bootstrap starter template</h1>
+				<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
+		 
+
+		</div><!-- /.container -->
+{% endblock %}
